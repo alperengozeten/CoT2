@@ -1,10 +1,10 @@
-# Continuous Chain of Thought Enables Parallel Exploration and Reasoning
+# CoT2 - Continuous Chain of Thought Enables Parallel Exploration and Reasoning 
 
 This repository contains the code for the paper: *“Continuous Chain of Thought Enables Parallel Exploration and Reasoning”*
 
 ## Overview
 
-This codebase contains SFT and CSFT training methods and also includes two GRPO variants with different sampling strategies, for MNNS, ProntoQA, and ProsQA tasks. Below is the general directory structure:
+This codebase contains SFT and CSFT training methods for discrete CoT and CoT2 models, and also includes two GRPO variants with different sampling strategies, on the MNNS, ProntoQA, and ProsQA tasks. Below is the general directory structure:
 
 1. **`discrete_train.py`**
 
@@ -40,3 +40,4 @@ If you find our work helpful, please cite our paper:
 }
 
 ```
+
