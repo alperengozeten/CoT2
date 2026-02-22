@@ -1,6 +1,6 @@
 <div align="center">
 
-# Continuous Chain of Thought Enables Parallel Exploration and Reasoning
+# CoT2 - Continuous Chain of Thought Enables Parallel Exploration and Reasoning
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.23648-b31b1b.svg)](https://arxiv.org/abs/2505.23648)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -15,7 +15,7 @@ Official implementation of the paper
 
 ## What is in this repository?
 
-| Component | Entry point | Typical launcher |
+| Component | Entry point | Launcher |
 |---|---|---|
 | Discrete CoT baseline | `train/discrete_train.py` | `bash scripts/discrete_evaluation.sh` |
 | Continuous CoT (CoT2) | `train/continuous_train.py` | `bash scripts/continuous_evaluation.sh` |
@@ -48,12 +48,6 @@ python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
-```
-
-Optional extras for some `prontoqa-prosqa/` workflows:
-
-```bash
-pip install scipy
 ```
 
 ## Quick start (MNNS)
@@ -104,13 +98,6 @@ python -u train/continuous_train_grpo_dirichlet.py \
   --clip_epsilon 0.1 \
   --sampling_normalization true
 ```
-
-## Reproducibility notes
-
-- Configure `CUDA_VISIBLE_DEVICES` in `scripts/*.sh` to match your machine.
-- For multi-run scripts, adjust `seeds=(...)` and `gpus=(...)` together.
-- Default MNNS setup in this repo uses `digit_range=1..10`, `seq_length=4`, and `split_method=random_permutation`.
-- Training scripts expose a `--seed` argument where applicable for deterministic runs.
 
 ## ProntoQA / ProsQA note
 
