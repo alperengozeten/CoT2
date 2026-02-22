@@ -9,7 +9,7 @@ import random
 import argparse
 import copy
 
-from generate_data import (
+from data.generate_data import (
     generate_vocab,
     dataset_random_split,
     permutation_train_val_split_continuous,

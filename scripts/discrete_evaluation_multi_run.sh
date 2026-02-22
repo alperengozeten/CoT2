@@ -55,8 +55,6 @@ do
             --num_layers $num_layers \
             --num_heads $num_heads \
             --seed $seed \
-            --dist_strategy $dist_strategy \
-            --num_beams $num_beams \
             > "$nohup_out" 2>&1 &
 
             echo "nohup output: $nohup_out"

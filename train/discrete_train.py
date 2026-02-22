@@ -3,8 +3,8 @@ import random
 from torch.utils.data import Dataset, DataLoader
 from transformers import GPT2Config, GPT2LMHeadModel
 from torch.optim import AdamW
-from generate_data import generate_vocab, generate_text_dataset, permutation_train_val_split
-from evaluation import evaluate_model, evaluate_model_pass_k
+from data.generate_data import generate_vocab, generate_text_dataset, permutation_train_val_split
+from eval.evaluation import evaluate_model, evaluate_model_pass_k
 from utils import plot_losses, plot_accuracies
 import argparse
 import torch.nn as nn
